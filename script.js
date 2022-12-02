@@ -1,8 +1,6 @@
-let firstNameInputValue = document.querySelector("#firstName");
-let lastNameInputValue = document.querySelector("#lastName");
-let emailInputValue = document.querySelector("#email");
-let passwordInputValue = document.querySelector("#password");
-let password2InputValue = document.querySelector("#password2");
+let emailInputValue = document.querySelector("#signup-emaill");
+let passwordInputValue = document.querySelector("#signup-password");
+let password2InputValue = document.querySelector("#signup-password2");
 let initialMessage ="";
 let emailErrorMessage="x Email address cannot be empty. Should be a non-empty value with format xyz@xyz.xyz";
 let passwordErrorMessage="x Password should be at least 6 character long with 1 uppercase and 1 lowercase";

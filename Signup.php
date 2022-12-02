@@ -14,28 +14,19 @@
     
     <div class="signup-first-div">
         <h3 class="signup-header">Signup</h3>
-        <form class="signup-form" method="post">
+        <form class="signup-form" method="post" action="connection.php" >
             <div class="signup-name">
-<<<<<<< HEAD
-                <input type="text" id="firstName" size="22" placeholder="First Name">
-                <input type="text" id="lastName" size="22" placeholder="Last Name">
-=======
-                <input type="text" id="signup-firstname" size="22" placeholder="First Name">
-                <input type="text" id="signup-lastname" size="22" placeholder="Last Name">
->>>>>>> c56fae67406e75e3734f1c48e7c75846cd852d9f
+                <input type="text" id="signup-firstname" size="22" placeholder="First Name" name="firstName">
+                <input type="text" id="signup-lastname" size="22" placeholder="Last Name" name="lastName">
             </div>
             <div class="signup-email">
-                <input type="text" id="signup-email" size="50" placeholder="Enter your email...">
+                <input type="text" id="signup-email" size="50" name="email" placeholder="Enter your email...">
             </div>
             <div class="signup-password">
-                <input type="password" id="signup-password" size="50" placeholder="Password(8 characters minimum)" required>
+                <input type="password" id="signup-password" size="50" name="password" placeholder="Password(8 characters minimum)" required>
             </div>
             <div class="signup-password">
-<<<<<<< HEAD
-                <input type="password" id="password2" size="50" placeholder="Confirm Password" required>
-=======
                 <input type="password" id="signup-password" size="50" placeholder="Confirm Password" required>
->>>>>>> c56fae67406e75e3734f1c48e7c75846cd852d9f
             </div>
             <div class="signup-button">
                 <button id="signup-submit" type="submit" value="Sign Up">Sign up</button>
