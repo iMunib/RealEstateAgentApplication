@@ -1,5 +1,5 @@
-let emailInputValue = document.querySelector("#signup-emaill");
-let passwordInputValue = document.querySelector("#signup-password");
+let emailInputValue = document.getElementById("signup-email");
+let passwordInputValue = document.getElementById("signup-passwordID");
 let password2InputValue = document.querySelector("#signup-password2");
 let initialMessage ="";
 let emailErrorMessage="x Email address cannot be empty. Should be a non-empty value with format xyz@xyz.xyz";
@@ -8,15 +8,16 @@ let password2ErrorMessage="x Passwords do not match";
 
 let emailError = document.createElement('p');
 emailError.setAttribute("class", "warning");
-document.querySelectorAll(".signup-error")[0].append(emailError);
+document.getElementById("signup-email").after(emailError);
 
 let passwordError = document.createElement('p');
 passwordError.setAttribute("class", "warning");
-document.querySelectorAll(".signup-password")[1].append(passwordError);
+// document.getElementById("signup-passwordID")[1].append(passwordError);
+document.getElementById("signup-passwordID").after(passwordError);
 
 let password2Error = document.createElement('p');
 password2Error.setAttribute("class", "warning");
-document.querySelectorAll(".signup-password2")[2].append(password2Error);
+document.getElementById("signup-password2").after(password2Error);
 
 function vaildateEmail() {
     let email = emailInputValue.value;
