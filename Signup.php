@@ -1,11 +1,12 @@
 <?php
-include('connection.php');
-include('signupdb.php');
+include_once('connection.php');
+include("signupdb.php");
 ?>
 
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +18,7 @@ include('signupdb.php');
 
 
 <body>
-    
+
     <div class="signup-first-div">
         <h3 class="signup-header">Signup</h3>
         <form class="signup-form" method="post" onsubmit="return validate();" action="signupdb.php">
@@ -35,7 +36,7 @@ include('signupdb.php');
                 <input type="password" id="signup-password2" size="50" placeholder="Confirm Password">
             </div>
             <div class="signup-button">
-                <button id="signup-submit" type="submit" value="Sign Up">Sign up</button>
+                <button id="signup-submit" type="submit" value="Sign Up" name="signup_button">Sign up</button>
             </div>
         </form>
     </div>

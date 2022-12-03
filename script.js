@@ -3,7 +3,7 @@ let passwordInputValue = document.getElementById("signup-passwordID");
 let password2InputValue = document.querySelector("#signup-password2");
 let initialMessage ="";
 let emailErrorMessage="x Email address cannot be empty. Should be a non-empty value with format xyz@xyz.xyz";
-let passwordErrorMessage="x Password should be at least 6 character long with 1 uppercase and 1 lowercase";
+let passwordErrorMessage="x Password should be at least 6 character long with 1 uppercase, 1 lowercase and 1 number";
 let password2ErrorMessage="x Passwords do not match";
 
 let emailError = document.createElement('p');
