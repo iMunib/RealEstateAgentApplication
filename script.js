@@ -101,3 +101,4 @@ password2InputValue.addEventListener("blur", () => {
         password2Error.textContent = initialMessage;
     }
 });
+
