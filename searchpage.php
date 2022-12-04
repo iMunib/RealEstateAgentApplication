@@ -41,7 +41,7 @@ function searchAgentsFunction() {
     <link rel="stylesheet" href="./styles.css">
 </head>
 
-<body>
+<body id="searchpagebody">
     <div id="searchpage-main-div">
         <img id="search-image-top" src="./images/searchpageimg.jpg" alt="picture of a kitchen">
         <div id="search-outer-div">
