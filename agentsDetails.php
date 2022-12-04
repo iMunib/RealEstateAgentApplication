@@ -9,6 +9,7 @@ $id = "";
 $fname = "";
 $lname = "";
 $age = "";
+$email = "";
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
@@ -27,6 +28,7 @@ function getPosts()
     $posts[1] = $_POST['fname'];
     $posts[2] = $_POST['lname'];
     $posts[3] = $_POST['age'];
+    $posts[4] = $_POST['email'];
     return $posts;
 }
 
@@ -50,6 +52,7 @@ if(isset($_POST['search']))
                 $fname = $row['fname'];
                 $lname = $row['lname'];
                 $age = $row['age'];
+                $email = $row['email'];
             }
         }else{
             echo 'No Data For This Id';
@@ -64,7 +67,7 @@ if(isset($_POST['search']))
 if(isset($_POST['insert']))
 {
     $data = getPosts();
-    $insert_Query = "INSERT INTO `users`(`fname`, `lname`, `age`) VALUES ('$data[1]','$data[2]',$data[3])";
+    $insert_Query = "INSERT INTO `users`(`id`, `fname`, `lname`, `age` , `email`) VALUES ($data[0],'$data[1]','$data[2]',$data[3],'$data[4]')";
     try{
         $insert_Result = mysqli_query($connect, $insert_Query);
         
@@ -108,7 +111,7 @@ if(isset($_POST['delete']))
 if(isset($_POST['update']))
 {
     $data = getPosts();
-    $update_Query = "UPDATE `users` SET `fname`='$data[1]',`lname`='$data[2]',`age`=$data[3] WHERE `id` = $data[0]";
+    $update_Query = "UPDATE `users` SET `id`=$data[0],`fname`='$data[1]',`lname`='$data[2]',`age`=$data[3],`email`='$data[4]' WHERE `id` = $data[0]";
     try{
         $update_Result = mysqli_query($connect, $update_Query);
         
@@ -132,29 +135,33 @@ if(isset($_POST['update']))
 
 
 <!DOCTYPE Html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
         <title>PHP INSERT UPDATE DELETE SEARCH</title>
     </head>
     <body>
-        <form action="agentsDetails.php" method="post">
-            <input type="number" name="id" placeholder="Id" value="<?php echo $id;?>"><br><br>
-            <input type="text" name="fname" placeholder="First Name" value="<?php echo $fname;?>"><br><br>
-            <input type="text" name="lname" placeholder="Last Name" value="<?php echo $lname;?>"><br><br>
-            <input type="number" name="age" placeholder="Age" value="<?php echo $age;?>"><br><br>
-            <div>
-                <!-- Input For Add Values To Database-->
-                <input type="submit" name="insert" value="Add">
+        <div class="detailsField">
+            <form action="agentsDetails.php" method="post">
+                <input type="number" name="id" placeholder="Agent Id" value="<?php echo $id;?>"><br><br>
+                <input type="text" name="fname" placeholder="First Name" value="<?php echo $fname;?>"><br><br>
+                <input type="text" name="lname" placeholder="Last Name" value="<?php echo $lname;?>"><br><br>
+                <input type="number" name="age" placeholder="Age" value="<?php echo $age;?>"><br><br>
+                <input type="text" name="email" placeholder="Email" value="<?php echo $email;?>"><br><br>
+                <div>
+
+                    <input type="submit" name="insert" value="Add">
                 
-                <!-- Input For Edit Values -->
-                <input type="submit" name="update" value="Update">
+                    <input type="submit" name="update" value="Update">
                 
-                <!-- Input For Clear Values -->
-                <input type="submit" name="delete" value="Delete">
+                    <input type="submit" name="delete" value="Delete">
                 
-                <!-- Input For Find Values With The given ID -->
-                <input type="submit" name="search" value="Find">
-            </div>
-        </form>
+                    <input type="submit" name="search" value="Find">
+                </div>
+            </form>
+        </div>
     </body>
 </html>
