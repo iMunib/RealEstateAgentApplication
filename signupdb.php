@@ -3,21 +3,17 @@
     $lastName=$_POST['lastName'];
     $email=$_POST['email'];
     $password=$_POST['password'];
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $db_name = "agents";  
-    $conn = new mysqli($servername, $username, $password, $db_name);
-    if($conn->connect_error){
-        die("Connection failed".$conn->connect_error);
+    $connection= new mysqli('localhost','root','','agents');
+    if($connection->connect_error){
+        die('Connection Failed : '.$connection->connect_error);
     }
     else{
-        $stmt = $conn->prepare("INSERT INTO signup(firstName,lastName,email,password) VALUES(?,?,?,?)");
-        $stmt = bind_param("ssss",$firstName,$lastName,$email,$password);
+        $stmt=$connection->prepare("insert into signup(firstName,lastName,email,password)
+        values(?,?,?,?)");
+        $stmt->bind_param("ssss",$firstName,$lastName,$email,$password);
         $stmt->execute();
-        echo "Registration Successful!!";
+        echo "Registration Successful";
         $stmt->close();
-        $conn->close();
+        $connection->close();
     }
 ?>
-
