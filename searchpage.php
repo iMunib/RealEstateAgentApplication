@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    
-    <div id="search-outer-form-div">
+    <div id="searchpage-main-div">
     <img id="search-image-top" src="./images/searchpageimg.jpg" alt="picture of a kitchen">
+    <div id="search-outer-form-div">
     <form action="search.php" method="post">
         <input type="text" id="search-input-box" name="search" placeholder="Search for agent..">
         <button type="submit" id="search-submit-button" name="submit-search">Search</button>
     </form>
     </div>
+</div>
 </body>
 </html>
