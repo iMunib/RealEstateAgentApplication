@@ -1,5 +1,8 @@
 <?php
-
+    $firstName=$_POST['firstName'];
+    $lastName=$_POST['lastName'];
+    $email=$_POST['email'];
+    $password=$_POST['password'];
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -8,6 +11,13 @@
     if($conn->connect_error){
         die("Connection failed".$conn->connect_error);
     }
-    echo "";
-
+    else{
+        $stmt = $conn->prepare("INSERT INTO signup(firstName,lastName,email,password) VALUES(?,?,?,?)");
+        $stmt = bind_param("ssss",$firstName,$lastName,$email,$password);
+        $stmt->execute();
+        echo "Registration Successful!!";
+        $stmt->close();
+        $conn->close();
+    }
+?>
 

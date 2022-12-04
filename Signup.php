@@ -1,9 +1,3 @@
-<?php
-include_once('connection.php');
-include("signupdb.php");
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +15,7 @@ include("signupdb.php");
 
     <div class="signup-first-div">
         <h3 class="signup-header">Signup</h3>
-        <form class="signup-form" method="post" onsubmit="return validate();" action="signupdb.php">
+        <form class="signup-form" method="post" onsubmit="return validate();" action="connection.php">
             <div class="signup-name">
                 <input type="text" id="signup-firstname" size="22" placeholder="First Name" name="firstName">
                 <input type="text" id="signup-lastname" size="22" placeholder="Last Name" name="lastName">
