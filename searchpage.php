@@ -47,7 +47,7 @@ function searchAgentsFunction() {
         <div id="search-outer-div">
             <input type="text" id="search-input-box" name="search" onkeyup="searchAgentsFunction()" placeholder="Search for agent..">
             <ul id="myUL">
-                <li><a href="#">Adele</a></li>
+                <li><a href="#">Adele Brit</a></li>
                 <li><a href="#">Agnes</a></li>
                 <li><a href="#">Billy</a></li>
                 <li><a href="#">Bob</a></li>
