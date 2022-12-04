@@ -9,6 +9,10 @@ body{
     background-color: #0a192f;
 }
 
+li{
+    list-style: none;
+}
+
 #index-body{
     overflow: hidden;
 }
