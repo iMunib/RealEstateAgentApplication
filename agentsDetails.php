@@ -135,30 +135,33 @@ if(isset($_POST['update']))
 
 
 <!DOCTYPE Html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
         <title>PHP INSERT UPDATE DELETE SEARCH</title>
     </head>
     <body>
-        <form action="agentsDetails.php" method="post">
-            <input type="number" name="id" placeholder="Id" value="<?php echo $id;?>"><br><br>
-            <input type="text" name="fname" placeholder="First Name" value="<?php echo $fname;?>"><br><br>
-            <input type="text" name="lname" placeholder="Last Name" value="<?php echo $lname;?>"><br><br>
-            <input type="number" name="age" placeholder="Age" value="<?php echo $age;?>"><br><br>
-            <input type="text" name="email" placeholder="Email" value="<?php echo $email;?>"><br><br>
-            <div>
-                <!-- Input For Add Values To Database-->
-                <input type="submit" name="insert" value="Add">
+        <div class="detailsField">
+            <form action="agentsDetails.php" method="post">
+                <input type="number" name="id" placeholder="Agent Id" value="<?php echo $id;?>"><br><br>
+                <input type="text" name="fname" placeholder="First Name" value="<?php echo $fname;?>"><br><br>
+                <input type="text" name="lname" placeholder="Last Name" value="<?php echo $lname;?>"><br><br>
+                <input type="number" name="age" placeholder="Age" value="<?php echo $age;?>"><br><br>
+                <input type="text" name="email" placeholder="Email" value="<?php echo $email;?>"><br><br>
+                <div>
+
+                    <input type="submit" name="insert" value="Add">
                 
-                <!-- Input For Edit Values -->
-                <input type="submit" name="update" value="Update">
+                    <input type="submit" name="update" value="Update">
                 
-                <!-- Input For Clear Values -->
-                <input type="submit" name="delete" value="Delete">
+                    <input type="submit" name="delete" value="Delete">
                 
-                <!-- Input For Find Values With The given ID -->
-                <input type="submit" name="search" value="Find">
-            </div>
-        </form>
+                    <input type="submit" name="search" value="Find">
+                </div>
+            </form>
+        </div>
     </body>
 </html>
