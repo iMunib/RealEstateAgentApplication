@@ -12,8 +12,8 @@
 
 <body>
 
-    <div class="signup-first-div">
-        <h3 class="signup-header">Signup</h3>
+    <div id="signup-first-div">
+        <h3 id="signup-header">Enter your details to sign up!</h3>
         <form class="signup-form" method="post" onsubmit="return validate();" action="signupdb.php">
             <div class="signup-name">
                 <input type="text" id="signup-firstname" size="22" placeholder="First Name" name="firstName">
@@ -28,8 +28,8 @@
             <div class="signup-password2">
                 <input type="password" id="signup-password2" size="50" placeholder="Confirm Password">
             </div>
-            <div class="signup-button">
-                <button id="signup-submit" type="submit" value="Sign Up" name="signup_button">Sign up</button>
+            <div id="signup-button">
+                <button id="signup-submit" type="submit" value="Sign Up" name="signup_button">Sign Up</button>
             </div>
         </form>
     </div>

@@ -141,17 +141,19 @@ if(isset($_POST['update']))
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
-        <title>PHP INSERT UPDATE DELETE SEARCH</title>
+        <title>Admin Page</title>
     </head>
     <body>
-        <div class="detailsField">
-            <form action="agentsDetails.php" method="post">
+        <h2 id="header-agrentdetail">Admin Page</h2>
+        <div id="details-form-Field-div">
+            <form action="agentsDetails.php" method="post" id="agentdetails-form">
                 <input type="number" name="id" placeholder="Agent Id" value="<?php echo $id;?>"><br><br>
                 <input type="text" name="fname" placeholder="First Name" value="<?php echo $fname;?>"><br><br>
                 <input type="text" name="lname" placeholder="Last Name" value="<?php echo $lname;?>"><br><br>
                 <input type="number" name="age" placeholder="Age" value="<?php echo $age;?>"><br><br>
                 <input type="text" name="email" placeholder="Email" value="<?php echo $email;?>"><br><br>
-                <div>
+                </div>
+                <div id="agentsdetails-buttons">
 
                     <input type="submit" name="insert" value="Add">
                 
@@ -162,6 +164,6 @@ if(isset($_POST['update']))
                     <input type="submit" name="search" value="Find">
                 </div>
             </form>
-        </div>
+        
     </body>
 </html>

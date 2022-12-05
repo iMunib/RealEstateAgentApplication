@@ -16,4 +16,5 @@
         $stmt->close();
         $connection->close();
     }
-?>
+    echo '<script>alert("User has been created!")</script>';
+    header('location: ./index.php');

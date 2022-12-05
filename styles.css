@@ -1,3 +1,6 @@
+
+
+/* Styling the generic body for the pages */
 body{
     box-sizing: border-box;
     margin: 0;
@@ -9,19 +12,23 @@ body{
     background-color: #0a192f;
 }
 
+/* Styling the generic li for the pages */
 li{
     list-style: none;
 }
+
+/* not scrollable page */
 
 #index-body{
     overflow: hidden;
 }
 
-
+/* setting display flex for index main container */
  .main-container{
     display: flex;
 } 
 
+/*Styling the iamge for index */
 .login-image{
     background-color: aqua;
     width: 60%;
@@ -29,7 +36,7 @@ li{
     float: right;
 }
 
-
+/*Styling the iamge for index */
 .login-image img{
     width: 100%;
     height: 100%;
@@ -37,12 +44,13 @@ li{
 
 } 
 
+/*Styling the form for index */
 .login-form{
     width: 40%;
     height: 100vh;
     float: left;
 }
-
+/*Styling the form for index */
 .login-form .container{
     width: 100%;
     height: 100%;
@@ -50,6 +58,8 @@ li{
     justify-content: center;
     align-items: center;
 }
+
+/*Styling the link to signup for index */
 .signup{
     width: 100%;
     height: 100%;
@@ -58,6 +68,8 @@ li{
     align-items: center;
     padding-top: 15%;
 }
+
+/*Styling the button for signup */
 .button{
     width: 100%;
     border-radius: 8px;
@@ -65,10 +77,13 @@ li{
 .signup-button{
     padding-top: 10px;
 }
+
+/*Styling the inputs for signup */
 .signup-name, .signup-email, .signup-password{
     padding-top: 10px;
 }
 
+/*Styling the outer divs for index */
 .form-level-1{
     width: 100%;
     height: 100%;
@@ -84,11 +99,12 @@ li{
    border-radius: 5%;
 }
 
+/*Styling the header for index */
  #main-h3-head{
     text-align: center;
     font-size: 25px;
  }
-
+ /*Styling the email input for index */ 
 #email{
     width: 90%;
     height: 40px;
@@ -97,10 +113,10 @@ li{
     margin-right: 5%;
     margin-left: 5%;
     font-size: 16px;
-    color: #ccd6f6;
+    color: #1d1d1f;
     background-color: #efefef;
 }
-
+ /*Styling the password input for index */ 
 #password{
     width: 90%;
     height: 40px;
@@ -108,17 +124,11 @@ li{
     border: none;
     margin: 5%;
     font-size: 16px;
-    color: #ccd6f6;
+    color: #1d1d1f;
     background-color: #efefef;
 }
 
-#main-remember-label * {
-    font-size: 14px;
-    margin-left: 5%;
-    color: #ccd6f6;
-    margin-bottom: 5%; 
-}
-
+ /*Styling the link to create account for index */ 
 #main-create-account * {
     display: flex;
     justify-content: center;
@@ -128,33 +138,13 @@ li{
     margin-bottom: 5%; 
     text-decoration: none;
 }
-
-#main-submit{
-    width: 90%;
-    height: 40px;
-    border-radius: 8px;
-    border: none;
-    padding-left: 10px;
-    font-size: 16px;
-    color: #ccd6f6;
-    background-color: #2f57da;
-    margin-top: 5%;
-    margin-bottom: 10%;
-    
-}
+ /*Styling the submit input for index */ 
 #submit-main-div{
     display: flex;
     justify-content: center;
 }
 
-#search-outer-form-div{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+/* Styling the search bar for searchpage */
 
 #search-input-box{
     width: 100%;
@@ -167,11 +157,62 @@ li{
     background-color: #efefef;
 }
 
-#search-submit-button{
+/* Styling the search bar for searchpage */
+
+#search-submit-button:hover{
+    background-color: #19345c;
+}
+
+/* Styling the search bar for searchpage */
+#search-input-box:hover{
+    background-color: #19345c;
+}
+/* Styling the search bar for searchpage */
+#search-input-box:focus{
+    background-color: #19345c;
+}
+/* Styling the image for searchpage */
+#search-image-top{
+    width: 30%;
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+/* Styling the main div containing everything for searchpage */
+#searchpage-main-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Styling the main div containing everything for signup */
+#signup-first-div{
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    padding-top: 5%;
+
+}
+
+/* Styling the form for signup */
+.signup-form{
+   background-color: #8799d3;
+   padding: 5%;
+}
+
+/* design the signup submit form */
+#signup-submit{
     width: 100%;
     height: 40px;
     border-radius: 8px;
     border: none;
+    padding-left: 10px;
     font-size: 16px;
     color: #ccd6f6;
     background-color: #2f57da;
@@ -179,31 +220,139 @@ li{
     margin-bottom: 10%;
 }
 
-#search-submit-button:hover{
-    background-color: #19345c;
+/* Styling the header for signup */
+#signup-header{
+    text-align: center;
+    font-size: 25px;
 }
 
-#search-input-box:hover{
-    background-color: #19345c;
-}
-
-#search-input-box:focus{
-    background-color: #19345c;
-}
-#search-image-top{
-    width: 30%;
-    display: flex;
-    /* justify-content: center;
-    align-items: center; */
-    margin-top: 1%;
-    margin-bottom: 2%;
-}
-
-#searchpage-main-div{
+/* Styling the ul element for searchpage */
+#searchpage-ul{
+    padding-left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+}
+/* Styling the li element for searchpage */
+#searchpage-ul li{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ccd6f6;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    border-style: solid;
+
+}
+/* Styling the a element for searchpage */
+#searchpage-ul li a{
+    text-decoration: none;
+    color: #2f57da;
+    font-size: 14px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* Styling the a element hover for searchpage */
+#searchpage-ul li a:hover{
+    color: #19345c;
+}
+/* Styling the outer div for searchpage */
+#search-outer-div{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+/* Styling form of agentsdetail */
+#details-form-Field-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2%;
+}
+
+
+#agentdetails-form{
+    padding: 3%;
+    background-color: #ccd6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* styling the header for agentdetails */
+#header-agrentdetail{
+    text-align: center;
+    font-size: 25px;
+}
+/* styling the input for agentdetails */
+#agentdetails-form input{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    color: #000000;
+    background-color: #efefef;
+
+}
+
+/* styling the input buttons for agents diffent colours*/
+#agentsdetails-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#agentsdetails-buttons input{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    color: #000000;
+    background-color: #efefef;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#agentsdetails-buttons input:hover{
+    background-color: #19345c;
+}
+
+#agentsdetails-buttons input:focus{
+    background-color: #19345c;
+}
+
+#agentsdetails-buttons input:nth-child(1){
+    background-color: green;
+}
+
+#agentsdetails-buttons input:nth-child(2){
+    background-color: yellow;
+}
+
+#agentsdetails-buttons input:nth-child(3){
+    background-color: red;
+}
+
+#agentsdetails-buttons input:nth-child(4){
+    background-color: #2f57da;
 }
 
 
