@@ -143,7 +143,19 @@ if(isset($_POST['update']))
         <link rel="stylesheet" href="styles.css">
         <title>Admin Page</title>
     </head>
+
     <body>
+    <header id="nav-header">
+        <div class="container">
+        </div>
+        <nav id="main-navbar">
+            <ul id="nav-links">
+                <li><a href="index.php">Logout</a></li>
+                <li><a href="searchpage.php">Search</a></li>
+                <li><a href="agentsDetails.php">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
         <h2 id="header-agrentdetail">Admin Page</h2>
         <div id="details-form-Field-div">
             <form action="agentsDetails.php" method="post" id="agentdetails-form">

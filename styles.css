@@ -319,6 +319,7 @@ li{
     margin-bottom: 5%;
 }
 
+/* styling the buttons on agentdetail page such as edit, add, delete and update */
 #agentsdetails-buttons input{
     width: 100%;
     height: 40px;
@@ -330,30 +331,58 @@ li{
     margin-right: 5%;
     margin-left: 5%;
 }
-
+/* styling the hover effect */
 #agentsdetails-buttons input:hover{
     background-color: #19345c;
 }
 
-#agentsdetails-buttons input:focus{
-    background-color: #19345c;
-}
-
+/* styling the add button */
 #agentsdetails-buttons input:nth-child(1){
     background-color: green;
 }
 
+/* styling the update button */
 #agentsdetails-buttons input:nth-child(2){
     background-color: yellow;
 }
 
+/* styling the delete button */
 #agentsdetails-buttons input:nth-child(3){
     background-color: red;
 }
 
+/* styling the find button */
 #agentsdetails-buttons input:nth-child(4){
     background-color: #2f57da;
 }
+
+/* style the nav bar with a little space between each link and align right corner*/
+#nav-links{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* style the nav bar with a little space between each link and align right corner*/
+#nav-links a{
+    text-decoration: none;
+    color: #ccd6f6;
+    font-size: 14px;
+    margin-right: 5px;
+    margin-left: 5%;
+}
+
+/* style the nav bar with a little space between each link and align right corner*/
+#nav-links a:hover{
+    color: #19345c;
+}
+
+
 
 
 

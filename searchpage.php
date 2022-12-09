@@ -41,7 +41,19 @@ function searchAgentsFunction() {
     <link rel="stylesheet" href="./styles.css">
 </head>
 
+
 <body id="searchpagebody">
+<header id="nav-header">
+        <div class="container">
+        </div>
+        <nav id="main-navbar">
+            <ul id="nav-links">
+                <li><a href="index.php">Home</a></li>
+                <li><a href="searchpage.php">Search</a></li>
+                <li><a href="agentsDetails.php">Admin</a></li>
+            </ul>
+        </nav>
+    </header>
     <div id="searchpage-main-div">
         <img id="search-image-top" src="./images/searchpageimg.jpg" alt="picture of a kitchen">
         <div id="search-outer-div">
